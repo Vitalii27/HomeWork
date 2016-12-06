@@ -63,3 +63,41 @@ returnArr();
 
 
 
+// // Написать функцию, которая возвращает 1 массив, содержащий внутри себя 2 массива.
+
+// // Первый массив четные числа в обратном порядке. Второй массив нечетные числа в обычном порядке
+
+
+// // let myArr = [1,2,3,4,5,6,7,8,9];
+
+// // function evenOdd(arr) { ... }
+
+// // console.log(evenOdd(arr)) //[ [8,6,4,2], [1,3,5,7,9] ]
+
+
+
+
+
+let myArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+function returnArr(argument) {
+
+  let arr1 = [];
+  let arr2 = [];
+  for (i = 0; i < myArr.length; i++) {
+    if (myArr[i] % 2 == 0) {
+      arr1.push(myArr[i])
+    } else {
+      arr2.push(myArr[i])
+    }
+  }
+
+  newArr = [[arr1.reverse()] + ' , ' + [arr2]]
+
+  return [newArr];
+
+};
+let newArr = [];
+
+console.log(returnArr());
+
