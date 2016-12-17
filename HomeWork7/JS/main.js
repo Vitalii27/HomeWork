@@ -46,7 +46,7 @@ function solution3() {
             console.log(counter++);
         },
         clear: function(){
-            
+           console.log (counter = 0);
         }
     }
 }
@@ -57,3 +57,4 @@ call.method(); //1
 call.method(); //2
 call.method()
 call.clear()
+call.method()
