@@ -13,13 +13,11 @@
 
 
 function add(arg1) {
-    function add2(arg2) {
-        function add3(arg3) {
+    return function add2(arg2) {
+        return function add3(arg3) {
             return arg1 + arg2 + arg3;
         }
-        return add3;
     }
-    return add2;
 }
 
 
@@ -45,8 +43,8 @@ function solution3() {
         method: function () {
             console.log(counter++);
         },
-        clear: function(){
-           console.log (counter = 0);
+        clear: function () {
+            counter = 0;
         }
     }
 }
