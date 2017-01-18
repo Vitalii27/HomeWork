@@ -48,15 +48,15 @@ console.log(std);
 let wrk = new Worker('Mail.ru', 50000, 'Vitalii', 22, 'male', 1.80, 80);
 console.log(wrk);
 wrk.work();
-/*
- *
- * TASK - 3
- *
- * Измените startTimer таким образом, чтобы числа отобразились последовательно
- * с 10 до 1
- * Изменять функцию serverResponse и шапку цикла - нельзя
- *
- * */
+// /*
+//  *
+//  * TASK - 3
+//  *
+//  * Измените startTimer таким образом, чтобы числа отобразились последовательно
+//  * с 10 до 1
+//  * Изменять функцию serverResponse и шапку цикла - нельзя
+//  *
+//  * */
 
 let startTimer = () => {
   let timer = 10000;
@@ -64,10 +64,12 @@ let startTimer = () => {
     return setTimeout(function () {
       console.log('zzzz');
       console.log(i);
-    }, timer / 2);
+    }, timer = timer / 2);
   };
   for (let i = 10; i >= 1; i--) {
     serverResponse(i);
+    timer = timer * 2;
   }
+  
 };
 startTimer();
