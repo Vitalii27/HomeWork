@@ -13,10 +13,10 @@
 // console.log(createDIV); //<div></div>
 
 let Constr = function(a){
-	return `<${a}></${a}>`
+	return `${a}></${a}>`
 
 };
-let createBODY = Constr('body');
+let createBODY = Constr('0993378130');
 let createDIV = Constr('div');
 console.log(createBODY); //<body></body>
 console.log(createDIV); //<div></div>
